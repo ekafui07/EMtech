@@ -39,20 +39,32 @@
     {
       "id": "investment-returns-image",
       "description": "A person analyzing financial charts on a tablet.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBjaGFydHN8ZW58MHx8fHwxNzYzNzI1MDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBjaGFydHN8ZW58MHx8fHwxNzYzNzI1MDgzfDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "financial charts"
     },
     {
       "id": "provident-fund-image",
       "description": "A secure vault, representing financial security and fund management.",
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-5278e6844bdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2YXVsdHxlbnwwfHx8fDE3NjM3MjU5NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-5278e6844bdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2YXVsdHxlbnwwfHx8fDE3NjM3MjU5NDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "secure vault"
     },
     {
       "id": "about-us-image",
       "description": "A group of professionals in a business meeting, shaking hands.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhZnJpY2FuJTIwYnVzaW5lc3MlMjBtZWV0aW5nJTIwaGFuZHNoYWtlfGVufDB8fHx8MTc2NDYxNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhZnJpY2FuJTIwYnVzaW5lc3MlMjBtZWV0aW5nJTIwaGFuZHNoYWtlfGVufDB8fHx8MTc2NDYxNTM0N3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "business handshake"
+    },
+    {
+      "id": "mission-image",
+      "description": "Elderly person's hands clasped, representing experience and dignity.",
+      "imageUrl": "https://images.unsplash.com/photo-1607843011660-f483b7a16f48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkaWduaWZpZWQlMjByZXRpcmVtZW50fGVufDB8fHx8MTc2Mzc0MDE4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dignified retirement"
+    },
+    {
+      "id": "vision-image",
+      "description": "Hands holding coins with a plant growing, symbolizing financial growth and security.",
+      "imageUrl": "https://images.unsplash.com/photo-1462899006636-339e08d1844e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjBncm93dGh8ZW58MHx8fHwxNzYzNzI4NDM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial growth"
     }
   ]
 }

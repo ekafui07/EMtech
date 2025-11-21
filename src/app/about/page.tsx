@@ -2,9 +2,12 @@ import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AboutUsPage() {
-  const image = PlaceHolderImages.find(img => img.id === 'about-us-image');
+  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-us-image');
+  const missionImage = PlaceHolderImages.find(img => img.id === 'mission-image');
+  const visionImage = PlaceHolderImages.find(img => img.id === 'vision-image');
 
   return (
     <div className="container py-12 md:py-24 lg:py-32">
@@ -17,15 +20,15 @@ export default function AboutUsPage() {
         </div>
 
         <div className="grid md:grid-cols-5 gap-8 items-start mb-8">
-            {image && (
+            {aboutImage && (
                 <div className="relative h-64 w-full md:h-full col-span-2">
                     <Image
-                    src={image.imageUrl}
-                    alt={image.description}
+                    src={aboutImage.imageUrl}
+                    alt={aboutImage.description}
                     width={800}
                     height={500}
                     className="object-cover rounded-lg shadow-md"
-                    data-ai-hint={image.imageHint}
+                    data-ai-hint={aboutImage.imageHint}
                     />
                 </div>
             )}
@@ -40,6 +43,56 @@ export default function AboutUsPage() {
                 The trust therefore expects to offer significant differentiation with regard to our operations and services compared to our competitors in the fund management industry in Ghana. Consequently the HPT intends to develop and apply the requisite policies, strategies and programmes that will bring about sustained improvement and expansion in the service delivery of the Trust.This challenge makes it imperative for HPT to set up a reliable Management Information System that will be powered by a very good ICT platform for overall dissemination of organizational goals, programs and other related activities. The additional dimension expected from the application of ICT is to add value to the work performance and output of the staff of HPT. These in broad terms describe the demands that will drive the ICT strategic decisions and choices that HPT will adapt to ensure steady and enhanced performance culture.
             </p>
         </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mt-16 mb-8">
+            <Card className="shadow-lg">
+                {missionImage && (
+                     <div className="relative h-48 w-full">
+                        <Image
+                            src={missionImage.imageUrl}
+                            alt={missionImage.description}
+                            width={600}
+                            height={400}
+                            className="object-cover rounded-t-lg"
+                            data-ai-hint={missionImage.imageHint}
+                        />
+                    </div>
+                )}
+                <CardHeader>
+                    <CardTitle className="text-primary text-2xl">Mission Of Hedge Pensions Trust</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground text-lg">
+                    <p>Hedge Pensions Trust exists to provide adequate and dignified retirement package to each member through safe, prudent and strategic investment policies.</p>
+                </CardContent>
+            </Card>
+            <Card className="shadow-lg">
+                {visionImage && (
+                     <div className="relative h-48 w-full">
+                        <Image
+                            src={visionImage.imageUrl}
+                            alt={visionImage.description}
+                            width={600}
+                            height={400}
+                            className="object-cover rounded-t-lg"
+                            data-ai-hint={visionImage.imageHint}
+                        />
+                    </div>
+                )}
+                <CardHeader>
+                    <CardTitle className="text-primary text-2xl">Vision Of Hedge Pensions Trust</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground text-lg">
+                    <p>To achieve operational excellence, superior financial performance, first class customer satisfaction and secured pension income.</p>
+                </CardContent>
+            </Card>
+        </div>
+
+        <div className="prose prose-lg max-w-none text-muted-foreground text-xl/relaxed mt-8">
+            <p>
+                In performing its functions the Hedge Pensions Trust will partner with National Pensions Regulatory Authority (NPRA), office of the head of Civil Service, Controller and Accountant Generals Department (CAGD) and other relevant institutions in the fund management industry in Ghana.
+            </p>
+        </div>
+
         <div className="mt-12 text-center">
             <Button variant="outline" asChild>
                 <Link href="/#contact">
