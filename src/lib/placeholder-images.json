@@ -35,6 +35,12 @@
       "description": "A stack of documents in folders on a desk.",
       "imageUrl": "https://images.unsplash.com/photo-1724500307168-16a378a149ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkb2N1bWVudHMlMjBzdGFja3xlbnwwfHx8fDE3NjM3MjUzNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "documents stack"
+    },
+    {
+      "id": "investment-returns-image",
+      "description": "A person analyzing financial charts on a tablet.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBjaGFydHN8ZW58MHx8fHwxNzYzNzI1MDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial charts"
     }
   ]
 }

@@ -30,7 +30,7 @@ const services = [
     name: 'Investment Returns',
     icon: BarChart,
     description: 'The trust deed of the fund seeks to employ reputable fund advisors to manage the Scheme. Contributions by individual members will be strategically invested for good dividends.',
-    href: '#'
+    href: '/investment-returns'
   },
   {
     id: 'provident-fund',
