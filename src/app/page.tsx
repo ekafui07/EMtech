@@ -24,14 +24,14 @@ export default function Home() {
         )}
         <div className="absolute inset-0 bg-primary/70 z-10" />
         <div className="container relative z-20 px-4 md:px-6">
-          <div className="[view-timeline-name:--hero]">
-            <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl drop-shadow-lg [animation-range:entry_0_to_100%] [animation-timeline:--hero] animate-fade-in-up">
+          <div>
+            <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl drop-shadow-lg">
               Plan Your Future with Confidence
             </h1>
-            <p className="mx-auto max-w-[700px] text-lg md:text-xl mt-4 drop-shadow-md [animation-range:entry_20%_to_100%] [animation-timeline:--hero] animate-fade-in-up">
+            <p className="mx-auto max-w-[700px] text-lg md:text-xl mt-4 drop-shadow-md">
               Hedge Pensions Trust helps you calculate, plan, and invest for a secure and comfortable retirement.
             </p>
-            <div className="mt-8 [animation-range:entry_40%_to_100%] [animation-timeline:--hero] animate-fade-in-up">
+            <div className="mt-8">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
                 <a href="#calculator">Get Started</a>
               </Button>
@@ -40,16 +40,16 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="[view-timeline-name:--calculator]">
+      <div>
         <PensionCalculator />
       </div>
-      <div className="[view-timeline-name:--plans]">
+      <div>
         <PlanComparison />
       </div>
-      <div className="[view-timeline-name:--resources]">
+      <div>
         <ResourceLibrary />
       </div>
-      <div className="[view-timeline-name:--contact]">
+      <div>
         <ContactForm />
       </div>
     </>
