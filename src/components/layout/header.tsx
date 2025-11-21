@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Landmark, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 
 const navLinks = [
     { href: '/#calculator', label: 'Calculator' },
@@ -38,11 +38,18 @@ export default function Header() {
                             </Button>
                         </SheetTrigger>
                         <SheetContent side="left">
+                            <SheetHeader className="p-4 border-b">
+                                <SheetTitle className="flex items-center space-x-2">
+                                    <Link href="/" className="flex items-center space-x-2">
+                                        <Landmark className="h-6 w-6 text-primary" />
+                                        <span className="font-bold">Hedge Pensions Trust</span>
+                                    </Link>
+                                </SheetTitle>
+                                <SheetDescription>
+                                  Main navigation menu
+                                </SheetDescription>
+                            </SheetHeader>
                             <div className="flex flex-col p-4">
-                                <Link href="/" className="mb-8 flex items-center space-x-2">
-                                    <Landmark className="h-6 w-6 text-primary" />
-                                    <span className="font-bold">Hedge Pensions Trust</span>
-                                </Link>
                                 <nav className="flex flex-col space-y-4">
                                     {navLinks.map(link => (
                                         <SheetClose asChild key={link.href}>
