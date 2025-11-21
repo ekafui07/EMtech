@@ -50,9 +50,9 @@
     },
     {
       "id": "about-us-image",
-      "description": "A diverse team collaborating in a modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVhbXxlbnwwfHx8fDE3NjM3MjYxNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "diverse team"
+      "description": "A group of professionals in a business meeting, shaking hands.",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhZnJpY2FuJTIwYnVzaW5lc3MlMjBtZWV0aW5nJTIwaGFuZHNoYWtlfGVufDB8fHx8MTc2NDYxNTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business handshake"
     }
   ]
 }
