@@ -5,29 +5,39 @@ import Link from "next/link";
 
 const services = [
   {
+    id: 'personal-pension',
     name: 'Personal Pensions Scheme',
     icon: User,
     description: 'Our personal pension schemes and micro pensions are structured to address the investment needs of self employed persons in the formal and informal sectors respectively who desire to save towards their retirement in a disciplined way.',
+    href: '/personal-pension'
   },
   {
+    id: 'retirement-planning',
     name: 'Retirement Planning',
     icon: TrendingUp,
     description: 'Planning for your retirement can be nerve-racking as you approach retirement. As the Pensions Expert, Hedge makes planning for your retirement a breeze.',
+    href: '#'
   },
   {
+    id: 'corporate-pensions',
     name: 'Corporate Pensions',
     icon: Building,
     description: 'Pension Schemes have become an integral part of employee benefits packages. A pension scheme provides a firm a competitive edge in attracting and retaining highly skilled employees.',
+    href: '#'
   },
   {
+    id: 'investment-returns',
     name: 'Investment Returns',
     icon: BarChart,
     description: 'The trust deed of the fund seeks to employ reputable fund advisors to manage the Scheme. Contributions by individual members will be strategically invested for good dividends.',
+    href: '#'
   },
   {
+    id: 'provident-fund',
     name: 'Provident Fund Management',
     icon: Shield,
     description: 'The key service objective of the Trust is to provide efficient management of the Second Tier Pension termed the, "Mandatory fully funded and privately managed occupational pension scheme" for the members.',
+    href: '#'
   },
 ];
 
@@ -57,13 +67,13 @@ export default function PlanComparison() {
               </CardContent>
               <CardFooter>
                  <Button variant="outline" className="w-full" asChild>
-                    <Link href="#">Read More</Link>
+                    <Link href={service.href}>Read More</Link>
                   </Button>
               </CardFooter>
             </Card>
           ))}
         </div>
-        <div className="mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl lg:max-w-[calc(66.66%-1rem)] lg:mx-auto">
+        <div className="mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl lg:max-w-[calc(66.66%-2.66rem)] lg:mx-auto">
           {services.slice(3).map((service) => (
              <Card key={service.name} className="flex flex-col shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <CardHeader className="items-center text-center">
@@ -77,7 +87,7 @@ export default function PlanComparison() {
               </CardContent>
               <CardFooter>
                  <Button variant="outline" className="w-full" asChild>
-                    <Link href="#">Read More</Link>
+                    <Link href={service.href}>Read More</Link>
                   </Button>
               </CardFooter>
             </Card>
