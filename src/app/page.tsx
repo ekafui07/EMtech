@@ -1,5 +1,4 @@
 import PensionCalculator from '@/components/pension-calculator';
-import RecommendationsTool from '@/components/recommendations-tool';
 import PlanComparison from '@/components/plan-comparison';
 import ResourceLibrary from '@/components/resource-library';
 import ContactForm from '@/components/contact-form';
@@ -40,7 +39,6 @@ export default function Home() {
       </section>
 
       <PensionCalculator />
-      <RecommendationsTool />
       <PlanComparison />
       <ResourceLibrary />
       <ContactForm />
