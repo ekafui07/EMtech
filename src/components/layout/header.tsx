@@ -11,10 +11,14 @@ import {
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const navLinks = [
-    { href: '/about', label: 'About Us' },
     { href: '/#plans', label: 'Plans' },
     { href: '/#resources', label: 'Resources' },
     { href: '/#contact', label: 'Contact' },
+];
+
+const aboutLinks = [
+    { href: '/about', label: 'About Us' },
+    { href: '/board', label: 'Meet the Board' },
 ];
 
 const downloadLinks = [
@@ -35,6 +39,19 @@ export default function Header() {
                     <span className="font-bold sm:inline-block">Hedge Pensions Trust</span>
                 </Link>
                 <nav className="hidden flex-1 items-center space-x-6 text-sm font-medium md:flex">
+                    <DropdownMenu>
+                        <DropdownMenuTrigger className="flex items-center gap-1 text-foreground/60 transition-colors hover:text-foreground/80 focus:outline-none">
+                            About Us <ChevronDown className="h-4 w-4" />
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                            {aboutLinks.map(link => (
+                                <DropdownMenuItem key={link.label} asChild>
+                                    <Link href={link.href}>{link.label}</Link>
+                                </DropdownMenuItem>
+                            ))}
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+
                     {navLinks.map(link => (
                         <Link key={link.href} href={link.href} className="text-foreground/60 transition-colors hover:text-foreground/80">
                             {link.label}
@@ -81,6 +98,22 @@ export default function Header() {
                             </SheetHeader>
                             <div className="flex flex-col p-4">
                                 <nav className="flex flex-col space-y-4">
+                                    <Accordion type="single" collapsible className="w-full">
+                                        <AccordionItem value="about-us" className="border-b-0">
+                                            <AccordionTrigger className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground py-0 hover:no-underline">
+                                                About Us
+                                            </AccordionTrigger>
+                                            <AccordionContent className="pt-2">
+                                                <div className="flex flex-col space-y-4 pl-4">
+                                                {aboutLinks.map(link => (
+                                                    <SheetClose asChild key={link.label}>
+                                                        <Link href={link.href} className="text-base text-foreground/60 transition-colors hover:text-foreground">{link.label}</Link>
+                                                    </SheetClose>
+                                                ))}
+                                                </div>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
                                     {navLinks.map(link => (
                                         <SheetClose asChild key={link.href}>
                                             <Link href={link.href} className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground">
@@ -89,7 +122,7 @@ export default function Header() {
                                         </SheetClose>
                                     ))}
                                     <Accordion type="single" collapsible className="w-full">
-                                        <AccordionItem value="item-1" className="border-b-0">
+                                        <AccordionItem value="download" className="border-b-0">
                                             <AccordionTrigger className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground py-0 hover:no-underline">
                                                 Download
                                             </AccordionTrigger>
