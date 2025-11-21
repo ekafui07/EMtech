@@ -34,13 +34,19 @@ export default function AboutUsPage() {
             )}
             <div className="prose prose-lg max-w-none text-muted-foreground text-xl/relaxed md:col-span-3">
                 <p>
-                    The Hedge Pensions Trust (HPT) sees its main challenge as establishing a well-crafted Information and Communication infrastructure platform to the required effective and efficient services to its customers. On this basis HPT expects to generate high earnings from its operations and investments to ensure the possibility of providing attractive retirement income for its customers. In pursuit of this noble corporate policy HPT will endeavor to deploy appropriate and state- of -the art Information and Communication Technology (ICT) applications, among other things
+                    The Hedge Pensions Trust (HPT) sees its main challenge as establishing a well-crafted Information and Communication infrastructure platform to the required effective and efficient services to its customers. On this basis HPT expects to generate high earnings from its operations and investments to ensure the possibility of providing attractive retirement income for its customers.
+                </p>
+                <p>
+                  In pursuit of this noble corporate policy HPT will endeavor to deploy appropriate and state- of -the art Information and Communication Technology (ICT) applications, among other things
                 </p>
             </div>
         </div>
         <div className="prose prose-lg max-w-none text-muted-foreground text-xl/relaxed">
              <p>
-                The trust therefore expects to offer significant differentiation with regard to our operations and services compared to our competitors in the fund management industry in Ghana. Consequently the HPT intends to develop and apply the requisite policies, strategies and programmes that will bring about sustained improvement and expansion in the service delivery of the Trust.This challenge makes it imperative for HPT to set up a reliable Management Information System that will be powered by a very good ICT platform for overall dissemination of organizational goals, programs and other related activities. The additional dimension expected from the application of ICT is to add value to the work performance and output of the staff of HPT. These in broad terms describe the demands that will drive the ICT strategic decisions and choices that HPT will adapt to ensure steady and enhanced performance culture.
+                The trust therefore expects to offer significant differentiation with regard to our operations and services compared to our competitors in the fund management industry in Ghana. Consequently the HPT intends to develop and apply the requisite policies, strategies and programmes that will bring about sustained improvement and expansion in the service delivery of the Trust.
+            </p>
+             <p>
+                This challenge makes it imperative for HPT to set up a reliable Management Information System that will be powered by a very good ICT platform for overall dissemination of organizational goals, programs and other related activities. The additional dimension expected from the application of ICT is to add value to the work performance and output of the staff of HPT. These in broad terms describe the demands that will drive the ICT strategic decisions and choices that HPT will adapt to ensure steady and enhanced performance culture.
             </p>
         </div>
 
