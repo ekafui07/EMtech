@@ -1,5 +1,6 @@
 'use server';
 
+import 'dotenv/config';
 import { getPersonalizedPensionRecommendations, type PersonalizedPensionRecommendationsInput } from "@/ai/flows/personalized-pension-recommendations";
 
 export async function fetchPensionRecommendations(input: PersonalizedPensionRecommendationsInput) {
