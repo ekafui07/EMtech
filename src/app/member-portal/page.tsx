@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
+import { Download } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 export default function MemberPortalPage() {
   return (
@@ -43,6 +45,15 @@ export default function MemberPortalPage() {
             <Link href="#" className="underline">
               Sign up
             </Link>
+          </div>
+          <Separator className="my-6" />
+          <div className="text-center">
+            <Button variant="outline" asChild>
+                <a href="/member-portal-guide.pdf" download>
+                    <Download className="mr-2 h-5 w-5" />
+                    Download Portal Guide
+                </a>
+            </Button>
           </div>
         </CardContent>
       </Card>
