@@ -24,24 +24,34 @@ export default function Home() {
         )}
         <div className="absolute inset-0 bg-primary/70 z-10" />
         <div className="container relative z-20 px-4 md:px-6">
-          <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl drop-shadow-lg animate-fade-in-up">
-            Plan Your Future with Confidence
-          </h1>
-          <p className="mx-auto max-w-[700px] text-lg md:text-xl mt-4 drop-shadow-md animate-fade-in-up animation-delay-300">
-            Hedge Pensions Trust helps you calculate, plan, and invest for a secure and comfortable retirement.
-          </p>
-          <div className="mt-8 animate-fade-in-up animation-delay-600">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
-              <a href="#calculator">Get Started</a>
-            </Button>
+          <div className="[view-timeline-name:--hero]">
+            <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl drop-shadow-lg [animation-range:entry_0_to_100%] [animation-timeline:--hero] animate-fade-in-up">
+              Plan Your Future with Confidence
+            </h1>
+            <p className="mx-auto max-w-[700px] text-lg md:text-xl mt-4 drop-shadow-md [animation-range:entry_20%_to_100%] [animation-timeline:--hero] animate-fade-in-up">
+              Hedge Pensions Trust helps you calculate, plan, and invest for a secure and comfortable retirement.
+            </p>
+            <div className="mt-8 [animation-range:entry_40%_to_100%] [animation-timeline:--hero] animate-fade-in-up">
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
+                <a href="#calculator">Get Started</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
-      <PensionCalculator />
-      <PlanComparison />
-      <ResourceLibrary />
-      <ContactForm />
+      <div className="[view-timeline-name:--calculator]">
+        <PensionCalculator />
+      </div>
+      <div className="[view-timeline-name:--plans]">
+        <PlanComparison />
+      </div>
+      <div className="[view-timeline-name:--resources]">
+        <ResourceLibrary />
+      </div>
+      <div className="[view-timeline-name:--contact]">
+        <ContactForm />
+      </div>
     </>
   );
 }

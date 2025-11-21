@@ -26,7 +26,9 @@ export default function Header() {
                     ))}
                 </nav>
                 <div className="flex flex-1 items-center justify-end space-x-4">
-                    <Button className="hidden bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex">Get Started</Button>
+                    <Button asChild className="hidden bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex">
+                        <Link href="#calculator">Get Started</Link>
+                    </Button>
                     <Sheet>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="md:hidden">

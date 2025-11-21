@@ -28,7 +28,7 @@ const articles = [
 
 export default function ResourceLibrary() {
   return (
-    <section id="resources" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+    <section id="resources" className="w-full py-12 md:py-24 lg:py-32 bg-secondary [animation-range:entry_20%_to_50%] [animation-timeline:--resources] animate-fade-in-up">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
