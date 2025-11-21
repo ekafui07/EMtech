@@ -62,6 +62,21 @@ const boardMembers = [
         title: "Member",
         imageUrl: "https://picsum.photos/seed/board-12/200/200",
     },
+    {
+        name: "Mr. Sylvester Williams",
+        title: "Member",
+        imageUrl: "https://picsum.photos/seed/board-13/200/200",
+    },
+    {
+        name: "Mr. James Oppong-Mensah",
+        title: "Member",
+        imageUrl: "https://picsum.photos/seed/board-14/200/200",
+    },
+    {
+        name: "Mr. Ransford A. Dankyira",
+        title: "Independent Trustee",
+        imageUrl: "https://picsum.photos/seed/board-15/200/200",
+    },
 ];
 
 export default function BoardPage() {
