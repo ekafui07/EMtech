@@ -12,7 +12,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 const navLinks = [
     { href: '/about', label: 'About Us' },
-    { href: '/#calculator', label: 'Calculator' },
     { href: '/#plans', label: 'Plans' },
     { href: '/#resources', label: 'Resources' },
     { href: '/#contact', label: 'Contact' },
@@ -57,7 +56,7 @@ export default function Header() {
                 </nav>
                 <div className="flex flex-1 items-center justify-end space-x-4">
                     <Button asChild className="hidden bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex">
-                        <Link href="/#calculator">Get Started</Link>
+                        <Link href="/#plans">Our Services</Link>
                     </Button>
                     <Sheet>
                         <SheetTrigger asChild>

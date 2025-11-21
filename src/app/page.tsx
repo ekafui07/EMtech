@@ -1,4 +1,4 @@
-import PensionCalculator from '@/components/pension-calculator';
+
 import PlanComparison from '@/components/plan-comparison';
 import ResourceLibrary from '@/components/resource-library';
 import ContactForm from '@/components/contact-form';
@@ -33,16 +33,13 @@ export default function Home() {
             </p>
             <div className="mt-8">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
-                <a href="#calculator">Get Started</a>
+                <a href="#plans">Our Services</a>
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      <div>
-        <PensionCalculator />
-      </div>
       <div>
         <PlanComparison />
       </div>
