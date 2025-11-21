@@ -37,7 +37,7 @@ const services = [
     name: 'Provident Fund Management',
     icon: Shield,
     description: 'The key service objective of the Trust is to provide efficient management of the Second Tier Pension termed the, "Mandatory fully funded and privately managed occupational pension scheme" for the members.',
-    href: '#'
+    href: '/provident-fund'
   },
 ];
 
