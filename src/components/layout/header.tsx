@@ -4,10 +4,11 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 
 const navLinks = [
-    { href: '#calculator', label: 'Calculator' },
-    { href: '#plans', label: 'Plans' },
-    { href: '#resources', label: 'Resources' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/#calculator', label: 'Calculator' },
+    { href: '/#plans', label: 'Plans' },
+    { href: '/#resources', label: 'Resources' },
+    { href: '/#contact', label: 'Contact' },
+    { href: '/member-portal', label: 'Member Portal' },
 ];
 
 export default function Header() {
@@ -27,7 +28,7 @@ export default function Header() {
                 </nav>
                 <div className="flex flex-1 items-center justify-end space-x-4">
                     <Button asChild className="hidden bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex">
-                        <Link href="#calculator">Get Started</Link>
+                        <Link href="/#calculator">Get Started</Link>
                     </Button>
                     <Sheet>
                         <SheetTrigger asChild>
