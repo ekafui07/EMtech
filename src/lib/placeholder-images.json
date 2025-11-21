@@ -23,6 +23,12 @@
       "description": "A modern office setting conveying professionalism.",
       "imageUrl": "https://images.unsplash.com/photo-1646153114001-495dfb56506d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzYzNjkxNzMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern office"
+    },
+    {
+      "id": "retirement-planning-image",
+      "description": "Close-up of an older person's hands, resting on a colorful blanket, conveying a sense of calm and experience.",
+      "imageUrl": "https://images.unsplash.com/photo-1634474588707-de99f09285c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyZXRpcmVtZW50JTIwcGxhbm5pbmd8ZW58MHx8fHwxNzYzNzI1MDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "retirement planning"
     }
   ]
 }
