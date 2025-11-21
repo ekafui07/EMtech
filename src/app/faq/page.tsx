@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { CheckCircle } from "lucide-react";
 
 const faqItems = [
     {
@@ -25,6 +26,15 @@ const faqItems = [
     {
         question: "Do members have personal accounts?",
         answer: "Yes; Contributions made by a member of the Scheme shall be invested in the member contribution account including all accrued interests as soon as it is paid to the Trustee of the Scheme."
+    },
+    {
+        question: "What are the objectives of the Fund?",
+        answer: [
+            "To provide members with supplementary terminal benefits under a defined contribution management payable on the exit, death or retirement of members from active employment.",
+            "To ensure that employers are committed to the Pensions Act 766 (Three-tier Pension Scheme)",
+            "To encourage members develop the habit of savings and investment for future social and financial support.",
+            "To ensure proper management and investment of members contributions for effective maximum investment returns"
+        ]
     }
 ];
 
@@ -45,7 +55,18 @@ export default function FAQPage() {
                 {item.question}
               </AccordionTrigger>
               <AccordionContent className="text-base text-muted-foreground">
-                {item.answer}
+                {Array.isArray(item.answer) ? (
+                    <ul className="space-y-4">
+                        {item.answer.map((point, i) => (
+                            <li key={i} className="flex items-start">
+                                <CheckCircle className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                                <span>{point}</span>
+                            </li>
+                        ))}
+                    </ul>
+                ) : (
+                    item.answer
+                )}
               </AccordionContent>
             </AccordionItem>
           ))}
