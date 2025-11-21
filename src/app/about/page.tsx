@@ -45,15 +45,14 @@ export default function AboutUsPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mt-16 mb-8">
-            <Card className="shadow-lg">
+            <Card className="shadow-lg overflow-hidden">
                 {missionImage && (
                      <div className="relative h-48 w-full">
                         <Image
                             src={missionImage.imageUrl}
                             alt={missionImage.description}
-                            width={600}
-                            height={400}
-                            className="object-cover rounded-t-lg"
+                            fill
+                            className="object-cover"
                             data-ai-hint={missionImage.imageHint}
                         />
                     </div>
@@ -65,15 +64,14 @@ export default function AboutUsPage() {
                     <p>Hedge Pensions Trust exists to provide adequate and dignified retirement package to each member through safe, prudent and strategic investment policies.</p>
                 </CardContent>
             </Card>
-            <Card className="shadow-lg">
+            <Card className="shadow-lg overflow-hidden">
                 {visionImage && (
                      <div className="relative h-48 w-full">
                         <Image
                             src={visionImage.imageUrl}
                             alt={visionImage.description}
-                            width={600}
-                            height={400}
-                            className="object-cover rounded-t-lg"
+                            fill
+                            className="object-cover"
                             data-ai-hint={visionImage.imageHint}
                         />
                     </div>
