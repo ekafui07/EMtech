@@ -11,6 +11,7 @@ import {
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const navLinks = [
+    { href: '/about', label: 'About Us' },
     { href: '/#calculator', label: 'Calculator' },
     { href: '/#plans', label: 'Plans' },
     { href: '/#resources', label: 'Resources' },
