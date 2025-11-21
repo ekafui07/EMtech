@@ -29,7 +29,7 @@ export default function Home() {
             Plan Your Future with Confidence
           </h1>
           <p className="mx-auto max-w-[700px] text-lg md:text-xl mt-4 drop-shadow-md animate-fade-in-up animation-delay-300">
-            PensionWise helps you calculate, plan, and invest for a secure and comfortable retirement.
+            Hedge Pensions Trust helps you calculate, plan, and invest for a secure and comfortable retirement.
           </p>
           <div className="mt-8 animate-fade-in-up animation-delay-600">
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>

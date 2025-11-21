@@ -5,7 +5,7 @@ import Footer from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'PensionWise',
+  title: 'Hedge Pensions Trust',
   description: 'A simple website for a pensions company',
 };
 

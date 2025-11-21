@@ -63,7 +63,7 @@ export default function ContactForm() {
                 <div className="space-y-4 pt-4">
                     <div className="flex items-center gap-4">
                         <Mail className="h-6 w-6 text-primary"/>
-                        <p className="text-lg">support@pensionwise.com</p>
+                        <p className="text-lg">support@hedgepensionstrust.com</p>
                     </div>
                 </div>
             </div>

@@ -17,7 +17,7 @@ export default function Header() {
             <div className="container flex h-16 items-center">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
                     <Landmark className="h-6 w-6 text-primary" />
-                    <span className="font-bold sm:inline-block">PensionWise</span>
+                    <span className="font-bold sm:inline-block">Hedge Pensions Trust</span>
                 </Link>
                 <nav className="hidden flex-1 items-center space-x-6 text-sm font-medium md:flex">
                     {navLinks.map(link => (
@@ -39,7 +39,7 @@ export default function Header() {
                             <div className="flex flex-col p-4">
                                 <Link href="/" className="mb-8 flex items-center space-x-2">
                                     <Landmark className="h-6 w-6 text-primary" />
-                                    <span className="font-bold">PensionWise</span>
+                                    <span className="font-bold">Hedge Pensions Trust</span>
                                 </Link>
                                 <nav className="flex flex-col space-y-4">
                                     {navLinks.map(link => (
