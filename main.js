@@ -528,6 +528,71 @@
     }, 3500);
   }
 
+  // ==========================================================================
+  // 8. MOBILE NAVIGATION DRAWER
+  // ==========================================================================
+  function initMobileNav() {
+    const toggleBtn = document.getElementById('mobile-nav-toggle');
+    const overlay = document.getElementById('mobile-nav-overlay');
+    const closeBtn = document.getElementById('mobile-nav-close');
+    const backdrop = overlay ? overlay.querySelector('.mobile-nav-backdrop') : null;
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-footer a');
+
+    if (!toggleBtn || !overlay) return;
+
+    function openMobileMenu() {
+      overlay.classList.add('open');
+      toggleBtn.classList.add('open');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      overlay.classList.remove('open');
+      toggleBtn.classList.remove('open');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      if (overlay.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeMobileMenu);
+    }
+
+    if (backdrop) {
+      backdrop.addEventListener('click', closeMobileMenu);
+    }
+
+    mobileLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          closeMobileMenu();
+          const targetEl = document.querySelector(href);
+          if (targetEl) {
+            e.preventDefault();
+            setTimeout(() => {
+              if (lenis) {
+                lenis.scrollTo(targetEl, { offset: -60, duration: 1.2 });
+              } else {
+                targetEl.scrollIntoView({ behavior: 'smooth' });
+              }
+            }, 150);
+          }
+        }
+      });
+    });
+  }
+
   // Initialize on DOM ready
   document.addEventListener('DOMContentLoaded', () => {
     initThree();
@@ -535,5 +600,6 @@
     initPortfolio();
     initCardTilt();
     initInquiryForm();
+    initMobileNav();
   });
 })();
